@@ -1,0 +1,12 @@
+/model_three_213/model.model
+/model_three_213/model.model.vectors.npy
+/model_three_213/model.model.vectors_ngrams.npy
+/model_three_213/model.model.vectors_vocab.npy
+/model_two_187/model.model
+/model_two_187/model.model.vectors.npy
+/model_two_187/model.model.vectors_ngrams.npy
+/model_two_187/model.model.vectors_vocab.npy
+/venv_app/
+/venv/
+/old_venv/
+.idea

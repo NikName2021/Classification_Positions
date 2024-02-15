@@ -1,0 +1,64 @@
+{
+    "algorithm": {
+        "command": null,
+        "id": 7,
+        "name": "fastText Continuous Bag-of-Words",
+        "tool": "Gensim",
+        "url": "https://github.com/RaRe-Technologies/gensim",
+        "version": "3.6"
+    },
+    "contents": [
+        {
+            "filename": "model.model",
+            "format": "data"
+        },
+        {
+            "filename": "model.model.vectors.npy",
+            "format": "data"
+        },
+        {
+            "filename": "model.model.vectors_ngrams.npy",
+            "format": "data"
+        },
+        {
+            "filename": "model.model.vectors_vocab.npy",
+            "format": "data"
+        },
+        {
+            "filename": "meta.json",
+            "format": "json"
+        }
+    ],
+    "corpus": [
+        {
+            "NER": true,
+            "case preserved": false,
+            "description": "Taiga corpus",
+            "id": 95,
+            "language": "rus",
+            "lemmatized": true,
+            "public": true,
+            "stop words removal": "functional PoS",
+            "tagger": "UDPipe 1.2",
+            "tagset": null,
+            "tokens": 4867000000,
+            "url": "https://tatianashavrina.github.io/taiga_site/"
+        }
+    ],
+    "creators": [
+        {
+            "email": "andreku@ifi.uio.no",
+            "name": "Andrey Kutuzov"
+        }
+    ],
+    "dimensions": 300,
+    "documentation": [
+        "https://rusvectores.org"
+    ],
+    "external_id": "tayga_none_fasttextcbow_300_10_2019",
+    "handle": "http://vectors.nlpl.eu/repository/20/187.zip",
+    "id": 187,
+    "iterations": 3,
+    "vocabulary size": 192415,
+    "window": 10
+}
