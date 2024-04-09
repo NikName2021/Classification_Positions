@@ -10,3 +10,5 @@
 /venv/
 /old_venv/
 .idea
+/models/Gigachat/.env
+/models/YandexGPT/.env

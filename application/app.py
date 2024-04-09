@@ -47,6 +47,7 @@ def work_with_table(args):
     if args.enlarged_position not in data:
         print(f'{Fore.RED}[Errno 2] The column with the name "{args.enlarged_position}" does not exist in the sheet{Style.RESET_ALL}')
         return
+    data[args.enlarged_position] = None
 
     for index, row in data.iterrows():
         class_pred = model.predict(clear(row[args.positions]))
