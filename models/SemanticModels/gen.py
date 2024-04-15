@@ -15,7 +15,7 @@ y_test = pd.array(list(control_words.values()))
 
 
 def check_gensim():
-    model = gensim.models.KeyedVectors.load('model_three_213/model.model')
+    model = gensim.models.KeyedVectors.load('../../model_three_213/model.model')
     y_pred = []
     spell = Speller('ru')
 

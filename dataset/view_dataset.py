@@ -5,19 +5,10 @@ words_counter = {}
 with open('data/version_v2/new_profession.json', 'r', encoding='utf-8') as json_file:
     words = json.load(json_file)
 
-for i, j in words.items():
-    if j in words_counter:
-        words_counter[j].append(i)
-    else:
-        words_counter[j] = [i]
-
-for i, j in words_counter.items():
-    print(f'{i}: {len(j)}')
-
 new_worker = []
 counter = 0
 while True:
-    if counter == 200:
+    if counter == 150:
         break
 
     new = random.choice(words_counter["Рабочий"])

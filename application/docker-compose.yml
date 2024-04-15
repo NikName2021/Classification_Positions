@@ -1,0 +1,22 @@
+version: '3.10'
+
+services:
+
+  python:
+    container_name: bot_python
+    build:
+      dockerfile: Dockerfile
+    command: python3 main.py
+    environment:
+      PYTHONUNBUFFERED: 1
+    restart: "always"
+    volumes:
+      - ${PROJECT_VOLUME_SRC}:/app:cached
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  db_volume:
+    external: false

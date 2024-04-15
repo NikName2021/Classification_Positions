@@ -10,13 +10,12 @@ import pandas as pd
 from consts import profession_list_without
 
 
-with open('train_2.json', 'r', encoding='utf-8') as json_file:
+with open('../../dataset/data/version_v3/train.json', 'r', encoding='utf-8') as json_file:
     control_words = json.load(json_file)
 x_train = list(control_words.keys())
 y_train = list(control_words.values())
 
-
-with open('test_2.json', 'r', encoding='utf-8') as json_file:
+with open('../../dataset/data/version_v3/test.json', 'r', encoding='utf-8') as json_file:
     control_words = json.load(json_file)
 x_test = pd.array(list(control_words.keys()))
 y_test = pd.array(list(control_words.values()))
@@ -36,6 +35,5 @@ model_name = 'trained_model_v3.sav'
 pickle.dump(logreg, open(model_name, 'wb'))
 
 y_pred = logreg.predict(x_test)
-
 print(classification_report(y_test, y_pred, labels=profession_list_without))
 print(f"F1 Score: {f1_score(y_test, y_pred, average='weighted')}")
